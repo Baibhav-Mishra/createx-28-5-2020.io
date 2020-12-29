@@ -1,0 +1,956 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Resources/stylesheet.css">
+    <title>Ticket Booking</title>
+    <link rel="icon" href="Resources/Images/icon.png" type="image/icon type">
+  <style>
+body{
+    margin:0;
+}
+
+
+</style>
+
+
+</head>
+
+<div style =" background-color: #f8c440;font-size: 25; height: 10%;  border: 3px solid #e4ab39; padding:; color: black;">
+<a href="index.html" class="previous round" style=" display: inline-block;"><p style="padding: 8px 16px; font-size:50px;display: inline-block; margin-top: -2%; color: black; ">&#8249;</p></a>
+    <center>
+    <p id = "date" style="font-size: 25; display: inline-block; margin-top: -7%"></p><br></center>
+</div>
+<br><br><br>
+<div class="seatStructure txt-center" style="overflow-x:auto; float: left; background-color: #f2f2f2; border: 1px solid lightgrey;
+  border-radius: 3px;">
+                <table id="seatsBlock">
+                    <tr>
+                        <td></td>
+                        <td style="color: black;">1</td>
+                        <td style="color: black;">2</td>
+                        <td style="color: black;">3</td>
+                        <td style="color: black;">4</td>
+                        <td style="color: black;">5</td>
+                        <td style="color: white;"> </td>
+                        <td style="color: black;">6</td>
+                        <td style="color: black;">7</td>
+                        <td style="color: black;">8</td>
+                        <td style="color: black;">9</td>
+                        <td style="color: black;">10</td>
+                        <td style="color: black;">11</td>
+                        <td style="color: black;">12</td>
+
+                    </tr>
+                    <tr>
+                        <td>J</td>
+                        <td>
+                            <label class="container">
+                          <input type="checkbox" value="J1" disabled>
+                          <span class="checkmark"></span>
+                        </label>
+                        </td>
+                        <td><label class="container">
+                            <input type="checkbox" class="seats" value="J2" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td><label class="container">
+                            <input type="checkbox" class="seats" value="J3" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+
+                        </td>
+                        <td>
+                           <label class="container">
+                            <input type="checkbox" class="seats" value="J4" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="J5" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td class="seatGap"></td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="J6" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="J7" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="J8" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="J9">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="J10" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                           <label class="container">
+                            <input type="checkbox" class="seats" value="J11" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="J12">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>I</td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="I1" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                             <label class="container">
+                            <input type="checkbox" class="seats" value="I2" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                             <label class="container">
+                            <input type="checkbox" class="seats" value="I3">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                             <label class="container">
+                            <input type="checkbox" class="seats" value="I4">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="I5" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td>
+                             <label class="container">
+                            <input type="checkbox" class="seats" value="I6">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="I7" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                             <label class="container">
+                            <input type="checkbox" class="seats" value="I8" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                             <label class="container">
+                            <input type="checkbox" class="seats" value="I9">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="I10">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                             <label class="container">
+                            <input type="checkbox" class="seats" value="I11" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                             <label class="container">
+                            <input type="checkbox" class="seats" value="I12">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>H</td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="H1" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                             <label class="container">
+                            <input type="checkbox" class="seats" value="H2">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                             <label class="container">
+                            <input type="checkbox" class="seats" value="H3">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="H4" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                             <label class="container">
+                            <input type="checkbox" class="seats" value="H5">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td>
+                             <label class="container">
+                            <input type="checkbox" class="seats" value="H6" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                             <label class="container">
+                            <input type="checkbox" class="seats" value="H7">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="H8">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="H9" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                             <label class="container">
+                            <input type="checkbox" class="seats" value="H10">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                             <label class="container">
+                            <input type="checkbox" class="seats" value="H11" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                             <label class="container">
+                            <input type="checkbox" class="seats" value="H12">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>G</td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="G1" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="G2">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="G3">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="G4" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="G5">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="G6">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                           <label class="container">
+                            <input type="checkbox" class="seats" value="G7" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="G8">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                           <label class="container">
+                            <input type="checkbox" class="seats" value="G9">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="G10" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                           <label class="container">
+                            <input type="checkbox" class="seats" value="G11">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                           <label class="container">
+                            <input type="checkbox" class="seats" value="G12" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>F</td>
+                        <td>
+                           <label class="container">
+                            <input type="checkbox" class="seats" value="F1" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="F2">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="F3">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="F4" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="F5">
+                            <span class="checkmark"></span> 
+                            </label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="F6" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="F7">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="F8" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="F9">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="F10" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="F11" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="F12">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr class="seatVGap"></tr>
+
+                    <tr>
+                        <td>E</td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="E1" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="E2">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="E3" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="E4">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="E5">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="E6">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="E7">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="E8" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="E9" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="E10">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="E11" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="E12">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>D</td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="D1" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="D2">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="D3" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="D4" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="D5">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="D6" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="D7">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="D8">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="D9" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="D10">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="D11">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="D12">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>C</td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="C1" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td><label class="container">
+                            <input type="checkbox" class="seats" value="C2">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="C3">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="C4" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="C5" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="C6">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="C7">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="C8">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="C9">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="C10">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="C11">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="C12">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>B</td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="B1">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="B2" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="B3" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="B4" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="B5" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="B6">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="B7">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="B8">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="B9" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="B10">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="B11">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="B12" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>A</td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="A1">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="A2" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="A3">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="A4" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="A5">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td></td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="A6" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="A7">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="A8" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="A9">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="A10">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="A11" disabled>
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="container">
+                            <input type="checkbox" class="seats" value="A12">
+                            <span class="checkmark"></span>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="screen">
+                    <h2 class="wthree" style="padding-left: 300">Screen this way</h2>
+                </div>
+                <button onclick= "checked()"style="background-color: #f8c440; /* Yellowish Orange */
+                                      border: none;
+                                      color: white;
+                                      padding: 16px;
+                                      text-align: center;
+                                      text-decoration: none;
+                                      display: inline-block;
+                                      font-size: 16px;
+                                      margin: 4px 2px;
+                                      cursor: pointer;
+                                      border-radius: 12px;
+                                      align-self: center;
+                                      width: 100%;
+                                      color: black;"
+                                      >Confirm Selection</button>                                      
+            </div>
+
+</div>
+
+<br>
+<div class = "legend"> Booked <div class="square" style="height: 25px;
+  width: 25px;
+  background-color: #000; display:inline-block; margin-bottom: -2px"></div>
+  &nbsp&nbsp&nbsp Available <div class="square" style="height: 25px;
+  width: 25px;
+  background-color: #f8c440; display:inline-block; margin-bottom: -2px;"></div>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbspHighlighted <div class="square" style="height: 25px;
+  width: 25px;
+  background-color: #bb323a; display:inline-block; margin-bottom: -2px"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="form">
+<div class="row">
+  <div class="col-75">
+    <div class="container1">
+      <form>
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Aditya Gupta">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+
+            <input type="text" id="email" name="email" placeholder="aditya1201@example.com">
+
+            <label for="adr"><i class="fa fa-address-card-o"></i>DOB</label>
+            <input type="text" id="adr" name="address" placeholder="DD/MM/YYY">
+
+            <div class="row">
+              <div class="col-50">
+                <p style="font-size: 20;">The seats</p><p id = "demo" style="font-size: 40; color: #bb323a"></p>
+                <p style="font-size: 20;">The Total Cost: </p> <p style="font-size: 40; color: #bb323a"id = "cost">&#8377;</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Aditya Gupta">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2020">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <input type="submit" value="Continue to checkout" class="btn" style="color: black;">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+  </div>
+</div>
+
+  </div>
+</form>
+
+<p id = "demo"></p>
+
+<script type="text/javascript">
+var d = new Date();
+var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var m = months[d.getMonth()];
+var y = d.getFullYear()
+if (days[d.getDay() + 1] == undefined){
+    var z = 0
+}
+else{
+    var z = d.getDay() + 1
+};
+
+document.getElementById("date").innerHTML= "Ticket Booking for " + days[z] + ", " + (d.getDate()+1) + ' ' + m + ", " + y + " at 4:30pm";
+function checked() {
+var array = []
+var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
+
+for (var i = 0; i < checkboxes.length; i++) {
+  array.push(checkboxes[i].value)
+}
+var x = array.toString();
+
+document.getElementById("demo").innerHTML = x;
+document.getElementById("cost").innerHTML = "&#8377;" +checkboxes.length * 300;
+
+}
+
+</script>

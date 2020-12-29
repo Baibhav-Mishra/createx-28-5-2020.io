@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="Resources/stylesheet.css">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Chettan+2&family=Montserrat&family=Raleway&family=Work+Sans&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<title>Home</title>
+<link rel="icon" href="Resources/Images/icon.png" type="image/icon type">
+
+<style>
+body {
+  margin: 0;
+  background-color: black;
+  font-family: Verdana, sans-serif;
+}
+
+.vectorpanel{height: 500px;
+            width:100%;
+            background-color: black;
+            position: static;
+            z-index: -1;
+
+}
+
+
+* {box-sizing: border-box;}
+body {}
+
+
+.mySlides {max-height:100%; max-width: 100%}
+img {vertical-align: middle;}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  padding-right: 20px;
+
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.scrorabble{
+  width : 100%;
+  height: 1%;
+  background-color: white;
+  /*padding: 1px*/
+}
+
+</style>
+</head>
+
+
+<body>
+<div id="navbar">
+  <a href="index.html">Home</a>
+  <a href="faq.html">FAQs</a>
+  <a href="review.html">Reviews</a>
+  <button id="myBtn">Get Ticket</button>
+</div>
+
+<div class="content">
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2 align="center">COVID UPDATE</h2>
+    </div>
+    <div class="modal-body">
+      <p>Due to unprecedented circumstances, the ticket bookings are only available 1 day prior to the show</p>
+      <p><button id = "myBtn1" onClick="location.href='book tickets.html'">Continue</button></p>
+    </div>
+    <div class="modal-footer">
+      <h3>Team Lion King</h3>
+    </div>
+  </div>
+
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <div class="numbertext"></div>
+  <img src="Resources/Images/h.png" style="width:100%; height: 100% ;object-fit: cover;">
+</div>
+<div class="mySlides">
+  <div class="numbertext"></div>
+  <img src="Resources/Images/a.jpg" style="width:100%; height: 100%;object-fit:cover;">
+</div>
+<div class="mySlides">
+  <div class="numbertext"></div>
+  <img src="Resources/Images/f.jpg" style="width:100%; height: 100%;object-fit: cover;"></div>
+
+<div data-aos="fade-up">
+<div class="vectorpanel">
+<p style="float: left"> <img src="Resources/Images/lionvector.svg" style="margin-right: 30px;height: 450px;width: 450px"></p> 
+<p class="text">
+Set in the heartland of Africa, The Lion King tells the tale of the brave and majestic lion Mufasa, who does his best to impart all his wisdom to his son Simba. However, fate has other plans as the father dies an unnatural death and Simba, blaming himself for the unfortunate incident, runs away from home. Join Simba and his friends Timon and Pumba as they try to win back the throne for the rightful heir. The play has it all, adventure,drama,action,comedy.Will Simba succeed in his journey. Tickets now available.</P>
+</div>
+</div>
+
+</div>
+</div>
+<p id = "demo" style="color: white;"></p>
+<div id = "3" style="height: 700px; width:100%; background-color: white; visibility: hidden; display: none; background-image: url('Resources/Images/q.jpg'); padding: 20px">
+<div style=" border: 2px solid black; width: 50%; height: 400px%; background-color: #e4ab39;border-radius: 8px"><P align = "center" style="font-size: 45px;font-family: 'Anton',sans-serif;";>"THERE IS NOTHING ELSE LIKE IT"</P><p style="font-size: 20px; text-align: right;font-family: 'Anton',sans-serif;padding-right: 80px;padding-bottom: 90px;letter-spacing: 3px;">-THE NEWYORKTIMES
+<img src="Resources/Images/l.png" style="margin-left: -2%; z-index: -1; width: 100%">
+</p> 
+<p id = "st"></p>
+
+
+</div>
+
+
+</div>
+<script type="text/javascript">
+$(window).scroll(function() {
+
+    var scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
+    if (scrollPercent > 99){
+      $("#3").css('visibility', 'visible' );
+      $("#3").fadeIn(800);
+    }
+
+    
+
+});
+
+</script>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000);
+}
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+
+}
+</script>
+
+
+
+
+<script>
+
+var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+
+var span = document.getElementsByClassName("close")[0];
+modal.style.display = "none";
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration:800
+    });
+  </script>
+
+
+
+</body>
+</html>
